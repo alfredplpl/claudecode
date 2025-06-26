@@ -4,13 +4,13 @@ A simple Python implementation of the classic number guessing game where the com
 
 ## Game Rules
 
-- The computer selects a random number between 1 and 100
+- The computer selects a random number between 1 and 1000
 - You have 7 attempts to guess the correct number
 - After each guess, you'll receive a hint:
   - "Too low!" if your guess is below the target
   - "Too high!" if your guess is above the target
   - "Congratulations!" if you guess correctly
-- Input validation ensures only valid numbers between 1-100 are accepted
+- Input validation ensures only valid numbers between 1-1000 are accepted
 
 ## Requirements
 
@@ -42,7 +42,7 @@ chmod +x game.py
 
 ```
 Welcome to the Number Guessing Game!
-I'm thinking of a number between 1 and 100.
+I'm thinking of a number between 1 and 1000.
 
 Attempt 1/7 - Enter your guess: 50
 Too high! Try a lower number.
