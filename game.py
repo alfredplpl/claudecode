@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
 Simple Number Guessing Game
-The computer picks a random number between 1 and 100, and you try to guess it!
+The computer picks a random number between 1 and 1000, and you try to guess it!
 """
 
 import random
 
 def play_game():
     print("Welcome to the Number Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
+    print("I'm thinking of a number between 1 and 1000.")
     
-    secret_number = random.randint(1, 100)
+    secret_number = random.randint(1, 1000)
     attempts = 0
     max_attempts = 7
     
@@ -19,8 +19,8 @@ def play_game():
             guess = int(input(f"\nAttempt {attempts + 1}/{max_attempts} - Enter your guess: "))
             attempts += 1
             
-            if guess < 1 or guess > 100:
-                print("Please enter a number between 1 and 100!")
+            if guess < 1 or guess > 1000:
+                print("Please enter a number between 1 and 1000!")
                 continue
             
             if guess == secret_number:
